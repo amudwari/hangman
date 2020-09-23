@@ -18,21 +18,23 @@ You'll get 3 tries to guess the word. Lets START...''')
         dash = "_ "
         print(dash, end = '')
 
-    for j in random_word:
+    for letters in random_word:
         user_input = input("\n" + "Enter a letter: ")
 
         for c in range(0, length):
 
             if random_word[c] == user_input:
+                result = user_input
                 print(user_input, end="")
             elif random_word[c] == " ":
                 print(" ", end="")
             else:
                 print(" _ ", end="")
+                result = " _ "
+        print(result)
 
-        #user_input = input("\n" + "Enter a letter: ")
 
-
+#def step_one():
 
 
 
