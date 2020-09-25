@@ -24,10 +24,13 @@ You'll get 3 tries to guess the word. Lets START...''')
         for c in range(0, length):
             if random_word[c] == user_input:
                 print(user_input, end="")
-            elif random_word[c] == " ":
-                print(" ", end="")
             else:
                 print(" _ ", end="")
+
+        if user_input in random_word:
+            index_word = random_word.index(user_input)
+            print(index_word)
+
        # user_input = input("\n" + "Enter a letter: ")
 
 
